@@ -64,12 +64,12 @@ h2 {
     display: block;
     width: 70px;
     height: 5px;
-    background: #f7444e;
+    background: rgb(255, 20, 145);
     margin: 10px auto 10px;
 }
 
 .heading_container h2 span {
-  color: #f7444e;
+  color: deeppink;
 }
 
 .heading_container p {
@@ -167,11 +167,11 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #f7444e;
+  color: deeppink;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link svg, .custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
-  fill: #f7444e;
+  fill: deeppink;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -183,7 +183,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #f7444e;
+  color: deeppink;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -280,7 +280,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #f7444e;
+  color: deeppink;
 }
 
 .slider_section .detail-box p {
@@ -292,8 +292,8 @@ a:focus {
 .slider_section .detail-box a {
     display: inline-block;
     padding: 12px 45px;
-    background-color: #f7444e;
-    border: 1px solid #f7444e;
+    background-color: deeppink;
+    border: 1px solid deeppink;
     color: #ffffff;
     border-radius: 0;
     -webkit-transition: all 0.3s;
@@ -304,7 +304,7 @@ a:focus {
 
 .slider_section .detail-box a:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: deeppink;
 }
 
 .slider_section .img-box img {
@@ -334,7 +334,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #f7444e;
+  background-color: deeppink;
 }
 
 .slider_bg_box {
@@ -369,6 +369,7 @@ a:focus {
     overflow: hidden;
     box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
     border: solid #fff 10px;
+    width: 370px;
 }
 
 .product_section .box .img-box {
@@ -381,14 +382,14 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 240px;
+  height: 215px;
 }
 
 .product_section .box .img-box img {
   max-width: 100%;
+  height: 230px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  height: 230px;
 }
 
 .product_section .box .detail-box {
@@ -404,6 +405,10 @@ a:focus {
 .product_section .box .detail-box h5 {
   font-size: 18px;
   margin-top: 10px;
+  color: deeppink;
+  position: absolute;
+  right: 0px;
+  left: 0px;
 }
 
 .product_section .box .detail-box h6 {
@@ -476,14 +481,14 @@ a:focus {
 }
 
 .product_section .options .option1 {
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: deeppink;
+  border: 1px solid deeppink;
   color: #ffffff;
 }
 
 .product_section .options .option1:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: deeppink;
 }
 
 .product_section .options .option2 {
@@ -510,8 +515,8 @@ a:focus {
 .product_section .btn-box a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: deeppink;
+  border: 1px solid deeppink;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -520,7 +525,7 @@ a:focus {
 
 .product_section .btn-box a:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: deeppink;
 }
 
 .arrival_section .heading_container {
@@ -561,8 +566,8 @@ a:focus {
 .arrival_section a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: deeppink;
+  border: 1px solid deeppink;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -571,7 +576,7 @@ a:focus {
 
 .arrival_section a:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: deeppink;
 }
 
 .why_section .box {
@@ -584,9 +589,19 @@ a:focus {
     height: 77.5%;
 }
 
-.detail-box h5 {
+.detail-box h5  {
     font-size: 21px;
     font-weight: 700;
+    color: #ffffff;
+}
+.detail-box p {
+  color: #ffffff;
+}
+.detail-box sup {
+  color: #ffffff;
+}
+.detail-box b{
+  color: #ffffff;
 }
 
 .remove_line_bt h2::after {
@@ -667,8 +682,8 @@ a:focus {
 .subscribe_section .subscribe_form form button {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: deeppink;
+  border: 1px solid deeppink;
   color: #ffffff;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
@@ -682,7 +697,7 @@ a:focus {
 
 .subscribe_section .subscribe_form form button:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: deeppink;
 }
 
 .client_section .box {
@@ -779,7 +794,7 @@ a:focus {
   height: 50px;
   opacity: 1;
   color: #ffffff;
-  background-color: #f7444e;
+  background-color: deeppink;
   border-radius: 100%;
 }
 
@@ -844,7 +859,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #f7444e;
+  color: deeppink;
 }
 
 .footer_section .footer-logo {
@@ -886,7 +901,7 @@ a:focus {
 }
 
 .footer_section .footer_social a:hover {
-  color: #f7444e;
+  color: deeppink;
 }
 
 .footer_section .map_container {
@@ -964,11 +979,11 @@ li.nav-item ul li a {
 }
 
 li.nav-item ul li a:hover, li.nav-item ul li a:focus {
-    color: #f7444e;
+    color: deeppink;
 }
 
 .inner_page_head {
-    background: #f7444e;
+    background:deeppink;
     text-align: center;
     color: #fff;
     padding-top: 50px;
@@ -1053,7 +1068,7 @@ div.form_sub .field input[type="email"], div.form_sub .field input[type="email"]
 .form_sub input[type="email"] + input[type="submit"] {
     position: absolute;
     right: 0;
-    background: #f7444e;
+    background: deeppink;
     color: #fff;
     border: none;
     top: 0px;
@@ -1103,7 +1118,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
-    background: #f7444e;
+    background: deeppink;
     color: #fff;
 }
 
@@ -1124,12 +1139,96 @@ form input[type="submit"]:focus {
 
 .cpy_ p a {
     margin: 0;
-    color: #f7444e;
+    color: deeppink;
     font-size: 15px;
     font-weight: 400;
 }
 
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.signInContainer {
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    background-color: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+    box-shadow: rgba(0,0,0, 0.1) 0 1px 2px;
+    padding: 20px 35px;
+    overflow-y: auto;
+}
+
+.column form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+
+.column form input[type="submit"] {
+    background-color: deeppink;
+    color: #fff;
+    height: 44px;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.column .header {
+    padding: 20px 0;
+}
+
+.column h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: #000;
+}
+
+.column .header span {
+    font-size: 14px;
+}
+
+.column .header img {
+    width: 100px;
+}
+
+.signInMessage {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
 
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
