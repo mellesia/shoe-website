@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <!-- Basic -->
+         <!-- Basic -->
    <meta charset="utf-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <!-- Mobile Metas -->
@@ -33,7 +33,7 @@
             <div class="column">
 
                 <div class="header">
-                <img src="images/logo.png" title="Logo" alt="Site logo" />
+                <img src="images/trendy11.png" title="Logo" alt="Site logo" />
                     <h3>Sign In</h3>
                     <span>continue to Trendy shoe</span>
                 </div>
