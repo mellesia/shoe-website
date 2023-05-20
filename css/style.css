@@ -122,7 +122,7 @@ a:focus {
 }
 
 .header_section {
-    padding: 15px 0;
+    padding: 8px 0;
 }
 
 .header_section .container-fluid {
@@ -132,6 +132,14 @@ a:focus {
 
 .navbar-brand {
   font-family: 'Playfair Display', serif;
+}
+i{
+  color: deeppink;
+  font-family: unset;
+}
+#search{
+  color: deeppink;
+
 }
 
 .navbar-brand span {
@@ -473,12 +481,18 @@ a:focus {
   display: inline-block;
   padding: 8px 15px;
   border-radius: 30px;
-  width: 165px;
+  width: 200px;
   text-align: center;
   -webkit-transition: all .3s;
   transition: all .3s;
   margin: 5px 0;
 }
+
+.product_section .options img {
+  height: 230px;
+  max-width: 170px;
+}
+
 
 .product_section .options .option1 {
   background-color: deeppink;
@@ -983,17 +997,17 @@ li.nav-item ul li a:hover, li.nav-item ul li a:focus {
 }
 
 .inner_page_head {
-    background:deeppink;
+    background:#ff149357;
     text-align: center;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 40px;
-    height: 130px;
+    height: 100px;
 }
 
 .inner_page_head h3 {
     font-size: 42px;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 /** footer **/
