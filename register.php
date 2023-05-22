@@ -79,8 +79,8 @@ require_once("includes/classes/Account.php");
                     <input type="text" name="addres" placeholder="addres" required>
 
                     <?php echo $account->getError(Constants::$phonenumber); ?>
-                     <input type="text" name="phone" placeholder="phone" required>
-
+                     <input type="text" id="phone" name="phone" placeholder="phone" required>
+                                       <span id='span' style="display:none">  please Enter Valid PHone</span>
 
                      <?php echo $account->getError(Constants::$emailsDontMatch); ?>
                     <?php echo $account->getError(Constants::$emailInvalid); ?>
@@ -104,6 +104,18 @@ require_once("includes/classes/Account.php");
             </div>
 
         </div>
+<script>
+let phone = document.getElementById('phone')
+let span = document.getElementById('span')
 
+phone.onkeyup = function(){
+  if(phone.value.length > 13){
+     phone.style.border = "1px solid red";
+     span.style.display="block";
+  }else{
+    span.style.display="none";
+  }
+}
+</script>
     </body>
 </html>

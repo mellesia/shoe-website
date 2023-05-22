@@ -90,9 +90,12 @@ class Account {
             array_push($this->errorArray, Constants::$adressCharacters);
         }
     }
+
+
     private function validatephone($ph) {
         if(strlen($ph) > 13) {
             array_push($this->errorArray, Constants::$phonenumber);
+            
         }
     }
 
