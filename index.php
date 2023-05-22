@@ -46,7 +46,7 @@
                            aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span
                                  class="caret"></span></a>
                         <ul class="dropdown-menu">
-                           <li><a href="about.html">About</a></li>
+                           <li><a href="about.php">About</a></li>
                            <li><a href="testimonial.php">Testimonial</a></li>
                         </ul>
                      </li>
