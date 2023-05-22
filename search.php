@@ -1,5 +1,6 @@
 <?php
-// include_once("includes/header.php");
+include_once("includes/navbar.php");
+
 ?>
 <div class="textboxContainer">
     <input type="text" class="searchInput" placeholder="Search for something">
@@ -7,11 +8,11 @@
 
 <div class="results"></div>
 
-<script>
+<!-- <script>
 
 $(function() {
 
-    var username = '<?php echo $userLoggedIn; ?>';
+    var username = '';
     var timer;
 
     $(".searchInput").keyup(function() {
@@ -34,4 +35,4 @@ $(function() {
 
 })
 
-</script>
+</script> -->

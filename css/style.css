@@ -1251,6 +1251,21 @@ body {
   text-align: center;
 }
 
+.textboxContainer {
+  padding: 100px 50px;
+}
+
+.searchInput {
+  height: 55px;
+  width: 600px;
+  border: 1px solid #dedede;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
 
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html

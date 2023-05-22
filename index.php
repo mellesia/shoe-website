@@ -30,7 +30,7 @@
       <header class="header_section">
          <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
-               <a class="navbar-brand" href="index.html"><img width="100" src="images/trendy11.png" alt="#" /></a>
+               <a class="navbar-brand" href="index.php"><img width="100" src="images/trendy11.png" alt="#" /></a>
                <i> Where Fashion Meets comfort</i>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav">
                      <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button"
@@ -47,14 +47,14 @@
                                  class="caret"></span></a>
                         <ul class="dropdown-menu">
                            <li><a href="about.html">About</a></li>
-                           <li><a href="testimonial.html">Testimonial</a></li>
+                           <li><a href="testimonial.php">Testimonial</a></li>
                         </ul>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="product.html">Products</a>
+                        <a class="nav-link" href="product.php">Products</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="category.html">category</a>
+                        <a class="nav-link" href="category.php">category</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#">
