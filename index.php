@@ -499,6 +499,13 @@
    </section>
    <!-- end why section -->
 
+<!-- show by id page  -->
+
+<a href="ShowByID.php/<?php ['id'] ?>">Show </a>
+
+<!-- end of show by id  -->
+
+
    <!-- arrival section -->
    <section class="arrival_section">
       <div class="container">
@@ -545,12 +552,10 @@
                <div class="box">
                   <div class="option_container">
                      <div class="options">
-                        <a href="" class="option1">
-                           add to cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
+                           <a href="" class="option1">
+                           Add to card
+                           </a>
+                           <a class="option2" href="ShowByID.php/<?= $data['id'] ?>">Buy Now </a>
                      </div>
                   </div>
                   <div class="img-box">
@@ -562,6 +567,7 @@
                      </h5>
                      <h6>
                      <?= $data['price']  ?>
+
                      </h6>
                   </div>
                </div>

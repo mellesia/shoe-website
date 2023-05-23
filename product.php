@@ -62,18 +62,18 @@
 
 
          <div class="row">
-           
+
          <?php foreach ($s as $data ):  ?>
             <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
-                  <div class="option_container">
+                  <div class="option_container">\
                      <div class="options">
-                        <a href="" class="option1">
-                           add to cart
-                        </a>
-                        <a href="" class="option2">
+                           <a href="" class="option1">
+                           Add to card
+                           </a>
+                           <a href="" class="option2">
                            Buy Now
-                        </a>
+                           </a>
                      </div>
                   </div>
                   <div class="img-box">
@@ -89,8 +89,6 @@
                   </div>
                </div>
             </div>
-
-
            <?php endforeach ?>
 
          <div class="btn-box">
