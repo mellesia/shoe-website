@@ -15,7 +15,7 @@ $account = new Account($con);
 
         if($success) {
             $_SESSION["userLoggedIn"] = $username;
-            header("Location: index.html");
+            header("Location: index.php");
         }
     }
 

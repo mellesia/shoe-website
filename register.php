@@ -21,7 +21,7 @@ require_once("includes/classes/Account.php");
 
         if($success) {
             $_SESSION["userLoggedIn"] = $username;
-            header("Location: index.html");
+            header("Location: index.php");
         }
     }
 ?>

@@ -28,7 +28,7 @@
    <div class="hero_area">
       <!-- header section strats -->
       <header class="header_section">
-         <div class="container">
+      <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
                <a class="navbar-brand" href="index.php"><img width="100" src="images/trendy11.png" alt="#" /></a>
                <i> Where Fashion Meets comfort</i>

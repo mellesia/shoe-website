@@ -53,17 +53,9 @@
             </h2>
          </div>
          <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="col-sm-6 col-md-3 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Men's Shirt
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p1.png" alt="">
@@ -78,17 +70,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p2.png" alt="">
@@ -103,17 +87,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p3.png" alt="">
@@ -128,17 +104,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p4.png" alt="">
@@ -153,17 +121,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p5.png" alt="">
@@ -178,17 +138,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p6.png" alt="">
@@ -203,17 +155,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p7.png" alt="">
@@ -228,17 +172,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p8.png" alt="">
@@ -253,17 +189,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p9.png" alt="">
@@ -278,17 +206,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p10.png" alt="">
@@ -303,17 +223,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p11.png" alt="">
@@ -328,17 +240,9 @@
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
-                     <div class="options">
-                        <a href="" class="option1">
-                           Add To Cart
-                        </a>
-                        <a href="" class="option2">
-                           Buy Now
-                        </a>
-                     </div>
                   </div>
                   <div class="img-box">
                      <img src="images/p12.png" alt="">

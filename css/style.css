@@ -361,6 +361,7 @@ i{
      object-fit: cover;
   -o-object-position: top right;
      object-position: top right;
+     object-fit: fill;
 }
 
 .product_section .heading_container {
@@ -1260,11 +1261,12 @@ body {
   width: 600px;
   border: 1px solid #dedede;
   background-color: transparent;
-  color: #fff;
+  color: black;
   font-size: 20px;
   padding: 5px 10px;
   border-radius: 3px;
 }
+
 
 
 http://kute-themes.com/html/boutique/html/index.html
