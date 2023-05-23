@@ -1,3 +1,12 @@
+
+<?php 
+   include_once("includes/connection.php");
+  $select = "SELECT * FROM `productcategory`";
+  $s = mysqli_query($con , $select  )
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -47,6 +56,8 @@
             <div class="heading_container heading_center">
             </div>
             <div class="row">
+             
+            <?php foreach ($s as $data ):  ?>
                <div class="col-sm-6">
                   <div class="box">
                      <div class="option_container">
@@ -60,96 +71,12 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Heels
+                        <?= $data['category_name']  ?>
                         </h5>
                      </div>
                   </div>
                </div>
-               <div class="col-sm-6">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a class="nav-link" href="boot.php"> <img src="images/boot.jpg width: 230px;" alt=""> </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/boot.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Boots
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a class="nav-link" href="sneakers.php"> <img src="images/sneakers.jpg width: 230px;" alt=""></a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/sneakers.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Sneakers
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a class="nav-link" href="sandal.php"> <img src="images/sandal.jpg width: 230px;" alt=""></a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/sandal.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Sandal
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a class="nav-link" href="flats.php"> <img src="images/flats.jpg width: 230px;" alt=""></a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/flats.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Flats
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a class="nav-link" href="slipper.php"> <img src="images/s2.jpg width: 230px;" alt=""></a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/s2.jpg" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Slippers
-                        </h5>
-                     </div>
-                  </div>
-               </div>
+             <?php endforeach ?>
 
             </div>
          </div>
