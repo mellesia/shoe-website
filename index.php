@@ -501,7 +501,6 @@
 
 <!-- show by id page  -->
 
-<a href="ShowByID.php/<?php ['id'] ?>">Show </a>
 
 <!-- end of show by id  -->
 
@@ -555,7 +554,8 @@
                            <a href="" class="option1">
                            Add to card
                            </a>
-                           <a class="option2" href="ShowByID.php/<?= $data['id'] ?>">Buy Now </a>
+                           <a href="ShowByID.php?show=<?= $data['product_id'] ?>">Show </a>
+
                      </div>
                   </div>
                   <div class="img-box">
