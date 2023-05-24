@@ -1,7 +1,16 @@
 <?php 
    include_once("includes/connection.php");
+   // include_once("includes/ShowByID.php");
+   
+  if( !isset($_GET['cat_id'])) {
   $select = "SELECT product.shoe_name , product.price , shoe_image.image_name ,product.product_id, shoe_image.product_id FROM product join shoe_image on product.product_id = shoe_image.product_id;";
-  $s = mysqli_query($con , $select  )
+  }
+  else {
+   $category_id = $_GET['cat_id'];
+   $select = "SELECT product.shoe_name , product.price , shoe_image.image_name ,product.product_id, shoe_image.product_id FROM product join shoe_image on product.product_id = shoe_image.product_id where product.categoryid = $category_id ;";
+  }
+   $s = mysqli_query($con , $select  )
+
 
 ?>
 
@@ -66,14 +75,13 @@
          <?php foreach ($s as $data ):  ?>
             <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
-                  <div class="option_container">\
+                  <div class="option_container">
                      <div class="options">
                            <a href="" class="option1">
                            Add to card
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
+                      <a href="ShowByID.php?show=<?= $data['product_id'] ?>">Show </a>
+
                      </div>
                   </div>
                   <div class="img-box">
@@ -91,11 +99,7 @@
             </div>
            <?php endforeach ?>
 
-         <div class="btn-box">
-            <a href="">
-               View All products
-            </a>
-         </div>
+         
       </div>
    </section>
    <!-- end product section -->

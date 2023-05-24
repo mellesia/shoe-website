@@ -61,7 +61,7 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a class="nav-link" href="heels.php">
+                           <a class="nav-link" href="product.php?cat_id=<?= $data['categoryid']  ?>">
                                <img src="images/heels2.jpg width: 230px;" alt="">
                            </a>
                         </div>

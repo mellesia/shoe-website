@@ -1,59 +1,102 @@
+<?php 
+   include_once("includes/connection.php");
+   include_once("includes/navbar.php");
+
+  $select = "SELECT * FROM `productcategory`";
+  $s = mysqli_query($con , $select  )
+
+?>
+
+
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <!-- Basic -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <!-- Site Metas -->
+   <meta name="keywords" content="" />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
+   <link rel="shortcut icon" href="images/trendylogo.png" type="">
+   <title>shoes website</title>
+   <!-- bootstrap core css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+   <!-- font awesome style -->
+   <link href="css/font-awesome.min.css" rel="stylesheet" />
+   <!-- Custom styles for this template -->
+   <link href="css/style.css" rel="stylesheet" />
+   <!-- responsive style -->
+   <link href="css/responsive.css" rel="stylesheet" />
 </head>
-<body>
-    <div class="container py-4">
-        <h2>Shopping Cart</h2>
-        <div class="row">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    // Check if the cart is set
-                    if (isset($_SESSION['cart'])) {
-                        $total = 0;
 
-                        foreach ($_SESSION['cart'] as $product_id => $product) {
-                            echo '<tr>';
-                            echo '<td>' . $product['shoe_name'] . '</td>';
-                            echo '<td>$' . $product['price'] . '</td>';
-                            echo '<td>';
-                            echo '<input type="number" class="form-control" name="quantity" value="' . $product['order_amount'] . '">';
-                            echo '</td>';
-                            echo '<td>$' . ($product['price'] * $product['quantity']) . '</td>';
-                            echo '<td><a href="remove.php?product_id=' . $product_id . '" class="btn btn-danger btn-sm">Remove</a></td>';
-                            echo '</tr>';
+<body class="sub_page">
+   <div class="hero_area">
+      <!-- header section strats -->
+      <?php
+      include_once("includes/navbar.php");
+      ?>
+      <!-- end header section -->
+   </div>
+   <!-- inner page section -->
+   <section class="inner_page_head">
+      <div class="container_fuild">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="full">
+                  <h3>Category List</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="product_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+            </div>
+            <div class="row">
+             
+            <?php foreach ($s as $data ):  ?>
+               <div class="col-sm-6">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a class="nav-link" href="product.php?cat_id=<?= $data['categoryid']  ?>">
+                               <img src="images/heels2.jpg width: 230px;" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box"> <img src="<?= $data['category_image']  ?>" alt="">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                        <?= $data['category_name']  ?>
+                        </h5>
+                     </div>
+                  </div>
+               </div>
+             <?php endforeach ?>
 
-                            $total += $product['price'] * $product['order_amount'];
-                        }
-
-                        // Display total
-                        echo '<tr>';
-                        echo '<td colspan="3" class="text-right"><strong>Total:</strong></td>';
-                        echo '<td colspan="2">$' . $total . '</td>';
-                        echo '</tr>';
-                    } else {
-                        echo '<tr>';
-                        echo '<td colspan="5">Your cart is empty.</td>';
-                        echo '</tr>';
-                    }
-                    ?>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            </div>
+         </div>
+         <div class="btn-box">
+            <a href="">
+               View All products
+            </a>
+         </div>
+         </div>
+      </section>
+      <!-- footer section -->
+      <!-- jQery -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
 </body>
+
 </html>
