@@ -3,6 +3,7 @@
 $product_id = $_GET['show'];
 
 $select = "SELECT * FROM product WHERE product_id = $product_id";
+
 $s = mysqli_query($con , $select);
 
 $rows = mysqli_fetch_assoc($s);
@@ -13,6 +14,7 @@ $rows = mysqli_fetch_assoc($s);
     <img src="" alt="" class="img-top">
         <div class="card-body">
             <?php echo $rows['shoe_name']?>
+
 
         </div>
     </div>

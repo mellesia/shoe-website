@@ -395,7 +395,7 @@ i{
 }
 
 .product_section .box .img-box img {
-  max-width: 80%;
+  max-width: 100%;
   height: 200px;
   -webkit-transition: all .3s;
   transition: all .3s;

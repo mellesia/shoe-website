@@ -62,12 +62,12 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a class="nav-link" href="heels.php"> <img src="images/heels2.jpg width: 230px;" alt="">
+                           <a class="nav-link" href="heels.php">
+                               <img src="images/heels2.jpg width: 230px;" alt="">
                            </a>
                         </div>
                      </div>
-                     <div class="img-box">
-                        <img src="images/heels2.jpg" alt="">
+                     <div class="img-box"> <img src="images/heels2.jpg" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
