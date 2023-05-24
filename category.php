@@ -67,7 +67,7 @@
                         </div>
                      </div>
                      <div class="img-box">
-                        <img src="images/heels2.jpg" alt="">
+                        <img src=" <?= $data['category_image']  ?>" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
