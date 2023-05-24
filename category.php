@@ -1,4 +1,3 @@
-
 <?php 
    include_once("includes/connection.php");
   $select = "SELECT * FROM `productcategory`";
@@ -67,7 +66,7 @@
                            </a>
                         </div>
                      </div>
-                     <div class="img-box"> <img src="images/heels2.jpg" alt="">
+                     <div class="img-box"> <img src="<?= $data['category_image']  ?>" alt="">
                      </div>
                      <div class="detail-box">
                         <h5>
