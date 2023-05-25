@@ -2,11 +2,10 @@
    include_once("includes/connection.php");
    // include_once("includes/ShowByID.php");
    
-<<<<<<< Updated upstream
-  if( !isset($_GET['cat_id'])) {
-=======
+
+
   if(!isset($_GET['cat_id'])) {
->>>>>>> Stashed changes
+
   $select = "SELECT product.shoe_name , product.price , shoe_image.image_name ,product.product_id, shoe_image.product_id FROM product join shoe_image on product.product_id = shoe_image.product_id;";
   }
   else {
@@ -103,15 +102,6 @@
             </div>
            <?php endforeach ?>
 
-<<<<<<< Updated upstream
-         
-=======
-         <!-- <div class="btn-box">
-            <a href="">
-               View All products
-            </a>
-         </div> -->
->>>>>>> Stashed changes
       </div>
    </section>
    <!-- end product section -->
