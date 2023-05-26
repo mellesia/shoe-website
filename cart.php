@@ -1,102 +1,72 @@
-<?php 
-   include_once("includes/connection.php");
-   include_once("includes/navbar.php");
+<?php
+session_start();
+include_once("includes/connection.php");
 
-  $select = "SELECT * FROM `productcategory`";
-  $s = mysqli_query($con , $select  )
+// Function to calculate the total price of cart items
+function calculateTotalPrice($cart) {
+    $total = 0;
+    if (is_array($cart)) {
+        foreach ($cart as $item) {
+            if (is_array($item)) {
+                $total += $item['price'] * $item['quantity'];
+            }
+        }
+    }
+    return $total;
+}
 
+// Check if $_SESSION['cart'] is set and an array
+$cartItems = isset($_SESSION['cart']) && is_array($_SESSION['cart']) ? $_SESSION['cart'] : [];
+
+// Check if the "remove" action is triggered
+if (isset($_GET['action']) && $_GET['action'] === 'remove' && isset($_GET['product_id'])) {
+    $productId = $_GET['product_id'];
+
+    // Check if the product ID exists in the shopping cart
+    if (isset($cartItems[$productId])) {
+        // Remove the product from the shopping cart
+        unset($cartItems[$productId]);
+
+        // Update the $_SESSION['cart'] variable with the updated shopping cart
+        $_SESSION['cart'] = $cartItems;
+    }
+}
 ?>
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
-   <!-- Basic -->
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <!-- Mobile Metas -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-   <!-- Site Metas -->
-   <meta name="keywords" content="" />
-   <meta name="description" content="" />
-   <meta name="author" content="" />
-   <link rel="shortcut icon" href="images/trendylogo.png" type="">
-   <title>shoes website</title>
-   <!-- bootstrap core css -->
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-   <!-- font awesome style -->
-   <link href="css/font-awesome.min.css" rel="stylesheet" />
-   <!-- Custom styles for this template -->
-   <link href="css/style.css" rel="stylesheet" />
-   <!-- responsive style -->
-   <link href="css/responsive.css" rel="stylesheet" />
+    <title>Shopping Cart</title>
+    <!-- Include necessary CSS stylesheets -->
 </head>
-
-<body class="sub_page">
-   <div class="hero_area">
-      <!-- header section strats -->
-      <?php
-      include_once("includes/navbar.php");
-      ?>
-      <!-- end header section -->
-   </div>
-   <!-- inner page section -->
-   <section class="inner_page_head">
-      <div class="container_fuild">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="full">
-                  <h3>Category List</h3>
-               </div>
-            </div>
-         </div>
-      </div>
-      <section class="product_section layout_padding">
-         <div class="container">
-            <div class="heading_container heading_center">
-            </div>
-            <div class="row">
-             
-            <?php foreach ($s as $data ):  ?>
-               <div class="col-sm-6">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a class="nav-link" href="product.php?cat_id=<?= $data['categoryid']  ?>">
-                               <img src="images/heels2.jpg width: 230px;" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box"> <img src="<?= $data['category_image']  ?>" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                        <?= $data['category_name']  ?>
-                        </h5>
-                     </div>
-                  </div>
-               </div>
-             <?php endforeach ?>
-
-            </div>
-         </div>
-         <div class="btn-box">
-            <a href="">
-               View All products
-            </a>
-         </div>
-         </div>
-      </section>
-      <!-- footer section -->
-      <!-- jQery -->
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <!-- popper js -->
-      <script src="js/popper.min.js"></script>
-      <!-- bootstrap js -->
-      <script src="js/bootstrap.js"></script>
-      <!-- custom js -->
-      <script src="js/custom.js"></script>
+<body>
+    <h1>Shopping Cart</h1>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+        <?php foreach ($cartItems as $productId => $cartItem) : ?>
+            <?php if (is_array($cartItem)) : ?>
+                <tr>
+                    <td><?= $cartItem['shoe_name'] ?></td>
+                    <td><?= $cartItem['quantity'] ?></td>
+                    <td><?= $cartItem['price'] ?></td>
+                    <td><?= $cartItem['price'] * $cartItem['quantity'] ?></td>
+                    <td>
+                        <a href="remove.php?action=remove&product_id=<?= $productId ?>">Remove</a>
+                    </td>
+                </tr>
+            <?php else : ?>
+                <tr>
+                    <!-- <td colspan="5">Invalid cart item: <?= $cartItem ?></td> -->
+                </tr>
+            <?php endif ?>
+        <?php endforeach ?>
+    </table>
+    <p>Total Price: <?= calculateTotalPrice($cartItems) ?></p>
+    <a href="checkout.php">Proceed to Checkout</a>
 </body>
-
 </html>

@@ -24,6 +24,7 @@ require_once("includes/classes/Account.php");
             header("Location: index.php");
         }
     }
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +38,7 @@ require_once("includes/classes/Account.php");
    <meta name="keywords" content="" />
    <meta name="description" content="" />
    <meta name="author" content="" />
-   <link rel="shortcut icon" href="images/favicon.png" type="">
+   <link rel="shortcut icon" href="images/trendylogo.png" type="">
    <title>shoes website</title>
    <!-- bootstrap core css -->
    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
