@@ -63,7 +63,7 @@ h2 {
     content: "";
     display: block;
     width: 70px;
-    height: 5px;
+    height: 5px;   
     background: rgb(255, 20, 145);
     margin: 10px auto 10px;
 }
@@ -279,22 +279,31 @@ i{
   position: unset;
 }
 
-.slider_section .detail-box h1 {
-    font-size: 4.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #002c3e;
-    line-height: 70px;
+.slider_section .detail-box h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: deeppink;
+  line-height: 70px;
+  font-family: emoji;
 }
 
-.slider_section .detail-box h1 span {
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: deeppink;
+    box-sizing: border-box;
+}
+
+.slider_section .detail-box h2 span {
   color: deeppink;
 }
 
 .slider_section .detail-box p {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 1.5rem;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  color: #000000cc;
+  text-align: justify;
 }
 
 .slider_section .detail-box a {
@@ -332,18 +341,29 @@ i{
 }
 
 .slider_section .carousel-indicators li {
-  background-color: #ffffff;
+  background-color: #0d0c0c;
   width: 12px;
   height: 12px;
   border-radius: 100%;
   opacity: 1;
 }
-
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
   background-color: deeppink;
 }
+
+
+
+.navbar-expand-lg {
+    min-width: 100%;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background: #00000003;
+}
+
 
 .slider_bg_box {
   position: absolute;
@@ -1253,7 +1273,7 @@ body {
 }
 
 .textboxContainer {
-  padding: 100px 50px;
+ padding: 100px 50px;
 }
 
 .searchInput {
@@ -1266,6 +1286,63 @@ body {
   padding: 5px 10px;
   border-radius: 3px;
 }
+
+.detail-box h5 {
+  font-size: 21px;
+  font-weight: 700;
+  color: deeppink;
+}
+
+
+.why_section .box .img-box svg {
+  width: 55px;
+  height: auto;
+  fill: deeppink;
+}
+
+.detail-box p {
+  color: deeppink;
+}
+
+.detail-box sup {
+  color:deeppink;
+}
+
+.detail-box b {
+  color:deeppink;
+}
+
+
+.why_section .box {
+  text-align: center;
+  margin-top: 45px;
+  background-color: #dee2e654;
+  padding: 45px 50px;
+  border-radius: 5px;
+  color: #ffffff;
+  height: 77.5%;
+}
+
+
+
+
+.arrival_section .arrival_bg_box img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: fill;
+  -o-object-position: top left;
+  object-position: top left;
+  object-position: left;
+}
+
+.arrival_section {
+  background-color: #e6dee599;
+}
+
+
+
+
 
 
 

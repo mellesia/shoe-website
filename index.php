@@ -140,7 +140,7 @@
       <!-- slider section -->
       <section class="slider_section ">
          <div class="slider_bg_box">
-            <img src="images/wall2.jpg" alt="">
+            <img src="images/im.jpg" alt="">
          </div>
          <div id="customCarousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -149,13 +149,13 @@
                      <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                            <div class="detail-box">
-                              <h1>
+                              <h2>
                                  <span>
                                     Sale 20% Off
                                  </span>
                                  <br>
                                  On Everything
-                              </h1>
+                              </h2>
                               <p>
                                  Welcome to our online shoe store, where footwear fashion meets comfort and style. As a
                                  new and exciting destination for shoe enthusiasts, our website aims to provide you with
@@ -177,12 +177,12 @@
                      <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                            <div class="detail-box">
-                              <h1>
+                              <h2>
                                  <span>
                                     Welcome back
                                  </span>
                                  <br>
-                              </h1>
+                              </h2>
                               <p>
                                  Welcome to our online shoe store, where footwear fashion meets comfort and style. As a
                                  new and exciting destination for shoe enthusiasts, our website aims to provide you with
@@ -204,13 +204,13 @@
                      <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                            <div class="detail-box">
-                              <h1>
+                              <h2>
                                  <span>
                                     Sale 20% Off
                                  </span>
                                  <br>
                                  On Everything
-                              </h1>
+                              </h2>
                               <p>
                                  Welcome to our online shoe store, where footwear fashion meets comfort and style. As a
                                  new and exciting destination for shoe enthusiasts, our website aims to provide you with
@@ -510,7 +510,7 @@
       <div class="container">
          <div class="box">
             <div class="arrival_bg_box">
-               <img src="images/newarrival.jpg" alt="">
+               <img src="images/new.jpg" alt="">
             </div>
             <div class="row">
                <div class="col-md-6 ml-auto">
