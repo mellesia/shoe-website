@@ -45,3 +45,17 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
+
+
+// pop up page 
+const openButton = document.getElementById('open-popup');
+const closeButton = document.getElementById('close-popup');
+const popupContainer = document.querySelector('.popup-container');
+
+openButton.addEventListener('click', () => {
+  popupContainer.style.display = 'flex';
+});
+
+closeButton.addEventListener('click', () => {
+  popupContainer.style.display = 'none';
+});

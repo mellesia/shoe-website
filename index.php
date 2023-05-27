@@ -26,10 +26,11 @@
    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
    <!-- font awesome style -->
    <link href="css/font-awesome.min.css" rel="stylesheet" />
-   <!-- Custom styles for this template -->
-   <link href="css/style.css" rel="stylesheet" />
+   
    <!-- responsive style -->
    <link href="css/responsive.css" rel="stylesheet" />
+   <!-- Custom styles for this template -->
+   <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -38,7 +39,7 @@
       <header class="header_section">
          <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
-               <a class="navbar-brand" href="index.php"><img width="100" src="images/trendy11.png" alt="#" /></a>
+               <a class="navbar-brand" href="index.php"><img width="90" src="images/trendy11.png" alt="#" /></a>
                <i> Where Fashion Meets comfort</i>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -499,18 +500,12 @@
    </section>
    <!-- end why section -->
 
-<!-- show by id page  -->
-
-
-<!-- end of show by id  -->
-
-
    <!-- arrival section -->
    <section class="arrival_section">
       <div class="container">
          <div class="box">
             <div class="arrival_bg_box">
-               <img src="images/new.jpg" alt="">
+               <img src="images/newlast.jpg" alt="">
             </div>
             <div class="row">
                <div class="col-md-6 ml-auto">
@@ -519,7 +514,7 @@
                         NewArrivals
                      </h2>
                   </div>
-                  <p style="margin-top: 20px;margin-bottom: 30px;">
+                  <p style="margin-top: 20px;margin-bottom: 30px; text-align: justify;">
                      Unleash your style with our latest collection of footwear and accessories. From elegant heels to
                      comfortable sneakers, we have something for every occasion. Stay on-trend and step up your fashion
                      game with our fresh arrivals. Visit our website now and be the first to rock the latest styles.
@@ -547,24 +542,27 @@
 
          <div class="row">
             <?php foreach ($s as $data ):  ?>
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-sm-24 col-md-3">
                <div class="box">
                   <div class="option_container">
                      <div class="options">
                            <a href="" class="option1">
                            Add to card
                            </a>
-                           <a href="ShowByID.php?show=<?= $data['product_id'] ?>">Show </a>
-
+                           
+                           <a  href="ShowByID.php?show=<?= $data['product_id'] ?>">show </a>     
+                        </div>
                      </div>
-                  </div>
                   <div class="img-box">
                   <img src="<?= $data['image_name']  ?>" alt="">
                   </div>
+                  <br>
                   <div class="detail-box">
                      <h5>
                         <?= $data['shoe_name']  ?>
                      </h5>
+                  <br>
+                  <br>
                      <h6>
                      <?= $data['price']  ?>
 
@@ -576,12 +574,6 @@
 
            <?php endforeach ?>
 
-         <div class="btn-box">
-            <a href="">
-               View All products
-            </a>
-         
-      </div>
    </section>
    <!-- end product section -->
 
@@ -595,7 +587,6 @@
                      <div class="heading_container heading_center">
                         <h3>Subscribe To Get Discount Offers</h3>
                      </div>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                      <form action="">
                         <input type="email" placeholder="Enter your email">
                         <button>
@@ -630,15 +621,15 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Anna Trevor
+                            Mellesia Maged
                         </h5>
                         <h6>
                            Owner
                         </h6>
                         <p>
-                           Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis
-                           reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad
-                           labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                        Customer satisfaction is of utmost importance to us. 
+                        We value your feedback and are always ready to listen 
+                        to your needs and concerns. Feel free to reach out to us through the contact information provided below, and we will be more than happy to help you.
                         </p>
                      </div>
                   </div>
@@ -654,15 +645,16 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Anna Trevor
+                           Theodora Maher
                         </h5>
                         <h6>
                            Owner
                         </h6>
                         <p>
-                           Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint unde quis
-                           reprehenderit, et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad
-                           labore modi voluptatibus accusantium sapiente nam! Quaerat.
+                        Customer satisfaction is of utmost importance to us.
+                         We value your feedback and are always ready to listen
+                          to your needs and concerns. Feel free to reach out to
+                           us through the contact information provided below, and we will be more than happy to help you.
                         </p>
                      </div>
                   </div>

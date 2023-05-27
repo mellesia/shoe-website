@@ -39,8 +39,7 @@
     object-position: top center;
   }
 
-  .arrival_section .arrival_bg_box img {
-    -o-object-position: top right;
+  .-o-object-position: top right;
     object-position: top right;
   }
 

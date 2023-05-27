@@ -40,16 +40,7 @@
       <!-- end header section -->
    </div>
    <!-- inner page section -->
-   <section class="inner_page_head">
-      <div class="container_fuild">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="full">
-                  <h3>Category List</h3>
-               </div>
-            </div>
-         </div>
-      </div>
+  
       <section class="product_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
@@ -57,21 +48,21 @@
             <div class="row">
              
             <?php foreach ($s as $data ):  ?>
-               <div class="col-sm-6">
+               <div class="col-sm-12 col-md-4">
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
                            <a class="nav-link" href="product.php?cat_id=<?= $data['categoryid']  ?>">
-                               <img src="images/heels2.jpg width: 230px;" alt="">
+                               <img src="images/heels2.jpg width: 250px;" alt="">
                            </a>
                         </div>
                      </div>
                      <div class="img-box"> <img src="<?= $data['category_image']  ?>" alt="">
                      </div>
                      <div class="detail-box">
-                        <h5>
+                        <h4>
                         <?= $data['category_name']  ?>
-                        </h5>
+                        </h4>
                      </div>
                   </div>
                </div>
@@ -80,7 +71,7 @@
             </div>
          </div>
          <div class="btn-box">
-            <a href="">
+            <a href="product.php">
                View All products
             </a>
          </div>

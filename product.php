@@ -142,19 +142,7 @@ $s = mysqli_query($con, $select);
       </header>
       <!-- end header section -->
     </div>
-    <!-- inner page section -->
-    <section class="inner_page_head">
-        <div class="container_fuild">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <h3>Product Grid</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end inner page section -->
+
     <!-- product section -->
     <section class="product_section layout_padding">
         <div class="container">
@@ -166,7 +154,7 @@ $s = mysqli_query($con, $select);
 
             <div class="row">
                 <?php foreach ($s as $data) : ?>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-sm-24 col-md-3">
                         <div class="box">
                             <div class="option_container">
                                 <div class="options">
@@ -179,8 +167,11 @@ $s = mysqli_query($con, $select);
                             <div class="img-box">
                                 <img src="<?= $data['image_name'] ?>" alt="">
                             </div>
+                            <br>
                             <div class="detail-box">
                                 <h5><?= $data['shoe_name'] ?></h5>
+                            <br>
+                            <br>
                                 <h6><?= $data['price'] ?></h6>
                             </div>
                         </div>

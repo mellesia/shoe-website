@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   color: #0c0c0c;
@@ -11,7 +14,7 @@ body {
 }
 
 .layout_padding {
-  padding: 70px 0;
+  padding: 70px 20px;
 }
 
 .layout_padding2 {
@@ -53,28 +56,25 @@ h2 {
 }
 
 .heading_container h2 {
-    position: relative;
-    margin-bottom: 0;
-    font-size: 3.5rem;
-    font-weight: bold;
+  position: relative;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: emoji;
+  margin-left: -1px;
 }
 
 .heading_container h2::after {
     content: "";
     display: block;
     width: 70px;
-    height: 5px;   
+    height: 5px;
     background: rgb(255, 20, 145);
     margin: 10px auto 10px;
 }
 
 .heading_container h2 span {
   color: deeppink;
-}
-
-.heading_container p {
-  margin-top: 10px;
-  margin-bottom: 0;
 }
 
 .heading_container.heading_center {
@@ -123,6 +123,7 @@ a:focus {
 
 .header_section {
     padding: 8px 0;
+    background-color: #f5e2e880;
 }
 
 .header_section .container-fluid {
@@ -352,74 +353,89 @@ i{
   height: 20px;
   background-color: deeppink;
 }
-
-
-
 .navbar-expand-lg {
-    min-width: 100%;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    background: #00000003;
+  min-width: 100%;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background: #00000003;
 }
 
 
 .slider_bg_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
 }
 
 .slider_bg_box img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top right;
-     object-position: top right;
-     object-fit: fill;
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+   object-fit: cover;
+-o-object-position: top right;
+   object-position: top right;
+   object-fit: fill;
 }
+
 
 .product_section .heading_container {
   margin-bottom: 20px;
 }
 
 .product_section .box {
-    position: relative;
-    margin-top: 25px;
-    padding: 35px 35px;
-    background-color: #f7f8f9;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
-    border: solid #fff 10px;
-    width: 370px;
+  position: relative;
+  margin-top: 15px;
+  padding-top: 37px;
+  background-color: #c1c4c77a;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
+  border: solid #fff 10px;
+  width: 290px;
+  height: 360px;
 }
+.product_section .container .row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: space-between;
+  padding: 0px 0px;
+  margin: -11px -84px;
+}
+
 
 .product_section .box .img-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 225px;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 300px;
+  width: 280px;
+  margin-top: -28px;
 }
 
 .product_section .box .img-box img {
-  max-width: 100%;
-  height: 200px;
+  height: 230px;
+  width: 200px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  object-fit: cover;
 }
+
 
 .product_section .box .detail-box {
   text-align: center;
@@ -433,17 +449,34 @@ i{
 
 .product_section .box .detail-box h5 {
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 20px;
   color: deeppink;
   position: absolute;
   right: 0px;
-  left: 0px;
+  left: 10px;
+  text-align: start;
+  top: 260px;
+}
+/* category */
+.product_section .box .detail-box h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: deeppink;
+  position: absolute;
+  right: 0px;
+  left: 10px;
+  text-align: center;
+  top: 270px;
+  font-weight: bold;
 }
 
+
 .product_section .box .detail-box h6 {
-  margin-top: 10px;
+  margin-top: -20px;
   color: #002c3e;
   font-weight: 600;
+  left: 20px;
+  margin-right: 20px;
 }
 
 .product_section .box:hover img {
@@ -458,7 +491,7 @@ i{
           transform: translateY(0);
 }
 .arrival_section {
-    background-color: #d4ced0;
+    background-color: #f5e2e880;
 }
 .product_section .option_container {
   position: absolute;
@@ -562,7 +595,6 @@ i{
   background-color: transparent;
   color: deeppink;
 }
-
 .arrival_section .heading_container {
   color: #002c3e;
   margin-bottom: 10px;
@@ -582,7 +614,7 @@ i{
     z-index: 3;
   }
 
-.arrival_section .arrival_bg_box img {
+  .arrival_section .arrival_bg_box img {
     width: 50%;
     height: 100%;
     -o-object-fit: cover;
@@ -590,10 +622,11 @@ i{
     -o-object-position: top left;
     object-position: top left;
     object-position: left;
+    object-fit: contain;
 }
 
 .container .arrival_bg_box{
-  left:5px;
+  left:-60px;
   object-position: left;
   float: left;
 }
@@ -617,7 +650,7 @@ i{
 .why_section .box {
     text-align: center;
     margin-top: 45px;
-    background-color: #002c3e;
+    background-color: #efefef ;
     padding: 45px 50px;
     border-radius: 5px;
     color: #ffffff;
@@ -627,16 +660,16 @@ i{
 .detail-box h5  {
     font-size: 21px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ff1493b3;
 }
 .detail-box p {
-  color: #ffffff;
+  color: #e7a2c7e0;
 }
 .detail-box sup {
-  color: #ffffff;
+  color: #ff1493b3;
 }
 .detail-box b{
-  color: #ffffff;
+  color: #ff1493b3;
 }
 
 .remove_line_bt h2::after {
@@ -1342,14 +1375,9 @@ body {
 
 
 
-
-
-
-
-
-
+/* 
 
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
 https://preview.hasthemes.com/xoss-preview/xoss/index.html
-
+ */

@@ -5,7 +5,10 @@ include_once("includes/connection.php");
 
 $product_id = $_GET['show'];
 
-$select = "SELECT product.shoe_name, product.price, shoe_image.image_name, product.product_id, shoe_image.product_id FROM product JOIN shoe_image ON product.product_id = shoe_image.product_id WHERE product.product_id = $product_id";
+$select = "SELECT product.shoe_name, product.price, product.product_desc, shoe_image.image_name, product.product_id, shoe_image.product_id FROM product 
+JOIN shoe_image 
+ON product.product_id = shoe_image.product_id 
+WHERE product.product_id = $product_id";
 
 $s = mysqli_query($con, $select);
 
@@ -18,6 +21,7 @@ if (isset($_POST['add_to_cart'])) {
         'shoe_name' => $rows['shoe_name'],
         'price' => $rows['price'],
         'quantity' => $_POST['quantity'],
+        'product_desc' => $rows['product_desc'],
         'image_name' => $rows['image_name']
     );
 
@@ -35,9 +39,15 @@ if (isset($_POST['add_to_cart'])) {
     <title>Shoes Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+
+
         .product-img {
-            width: 100%;
-            height: 100%;
+        width: 304px;
+        height: 486px;
+        object-fit: contain;
+        left: 60px;
+        margin-left: 52px;
+
         }
 
         .product-name {
@@ -73,10 +83,16 @@ if (isset($_POST['add_to_cart'])) {
         .add-to-cart {
             margin-top: 20px;
         }
+
+        .body{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
     </style>
 </head>
 
-<body>
+<body class="body" background="images/b3.jpg">
     <div class="container py-4">
         <div class="row">
             <?php foreach ($s as $data) : ?>
@@ -97,6 +113,7 @@ if (isset($_POST['add_to_cart'])) {
                                 <option value="xlllarge">41</option>
                             </select>
                         </div>
+                        <div class='row'>
                         <div class="form-group">
                             <label class="quantity-label" for="quantity">Quantity:</label>
                             <div class="quantity-control">
@@ -104,7 +121,20 @@ if (isset($_POST['add_to_cart'])) {
                                 <input type="text" class="form-control text-center" id="quantity" value="1">
                                 <button class="btn btn-outline-secondary" type="button" id="increase-quantity">+</button>
                             </div>
+                            
                         </div>
+            </div>
+                        <br>
+                        <br>
+
+                        <div class="price">
+                        <h2 class="price"><?= $data['price']?>LE</h2>
+                       </div> 
+                       <br>
+                        <div class="description">
+                        <h4 class="product-desc"><?= $data['product_desc'] ?></h2>
+                       </div>      
+
                         <form method="post" action="">
                             <input type="hidden" name="quantity" id="quantity-hidden" value="1">
                             <button class="btn btn-primary add-to-cart" name="add_to_cart">Add to Cart</button>
