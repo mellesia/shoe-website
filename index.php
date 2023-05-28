@@ -514,13 +514,13 @@
                         NewArrivals
                      </h2>
                   </div>
-                  <p style="margin-top: 20px;margin-bottom: 30px; text-align: justify;">
+                  <p style="margin-top: 20px;margin-bottom: 30px;">
                      Unleash your style with our latest collection of footwear and accessories. From elegant heels to
                      comfortable sneakers, we have something for every occasion. Stay on-trend and step up your fashion
                      game with our fresh arrivals. Visit our website now and be the first to rock the latest styles.
                      Happy shopping at <i>Trendy Shoe!</i>
                   </p>
-                  <a href="">
+                  <a href="product.php" style=" margin-left: -50px;">
                      Shop Now
                   </a>
                </div>
@@ -535,14 +535,15 @@
       <div class="container">
          <div class="heading_container heading_center">
             <h2>
-               Our <span>products</span>
+               Our <span style= "color: deeppink; font-family: emoji;">products</span>
+               <after></after>
             </h2>
          </div>
 
 
          <div class="row">
             <?php foreach ($s as $data ):  ?>
-            <div class="col-sm-24 col-md-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                <div class="box">
                   <div class="option_container">
                      <div class="options">
@@ -558,13 +559,12 @@
                   </div>
                   <br>
                   <div class="detail-box">
+                  <br>
                      <h5>
                         <?= $data['shoe_name']  ?>
                      </h5>
-                  <br>
-                  <br>
                      <h6>
-                     <?= $data['price']  ?>
+                     <?= $data['price' ]  ?> LE
 
                      </h6>
                   </div>
@@ -574,6 +574,12 @@
 
            <?php endforeach ?>
 
+         <div class="btn-box">
+            <a href="">
+               View All products
+            </a>
+         
+      </div>
    </section>
    <!-- end product section -->
 
